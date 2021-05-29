@@ -1,0 +1,56 @@
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()"> 
+        <ion-item lines="full" >
+          <ion-label position=floating>Correo</ion-label>
+          <ion-input type="email" inputmode="email" formControlName="email" ></ion-input> 
+        </ion-item>
+        <div *ngFor="let error of errorMessages.email">
+          <ng-container *ngIf="email.hasError(error.type) && (email.dirty || email.touched)">
+            <small class="error-message">{{error.message}}</small>
+          </ng-container>
+        </div>
+        <ion-item lines="full">
+          <ion-label position=floating>Contraseña</ion-label>
+         <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <div *ngFor="let error of errorMessages.password">
+          <ng-container *ngIf="password.hasError(error.type) && (password.dirty || password.touched)">
+            <small class="error-message">{{error.message}}</small>
+          </ng-container>
+        </div>
+        <ion-row>
+          <ion-col>
+            <ion-button [disabled]="!loginForm.valid" type="submit" color="light" expand="block">Ingresar</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-button (click)="Limpiar()" type="submit" color="secondary" expand="block">Limpiar</ion-button>
+          </ion-col>
+        </ion-row>
+    
+      </form>
+
+      <div id="container">
+        <ion-item>
+          <ion-label>Seleccionar Usuario</ion-label>
+          <ion-select id="selectUser" [(ngModel)]="pickedName" interface="popover" placeholder="Seleccione un usuario" (ionChange)="pickUser(pickedName)">
+              <ion-select-option *ngFor="let usuario of users" value="{{usuario.perfil}}">{{usuario.perfil}}</ion-select-option>
+          </ion-select>
+      </ion-item>
+      </div>
+
+      
+
+    </ion-card-content>
+  </ion-card>
+  
+
+
+
+
+</ion-content>

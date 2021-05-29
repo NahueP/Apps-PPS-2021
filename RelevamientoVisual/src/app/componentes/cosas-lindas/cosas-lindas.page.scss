@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,600&display=swap);
+
+
+
+ion-content{
+  --background:url("../../../assets/bglindo.jpg") 0 0/100% 100% no-repeat;
+  position: relative; 
+  align-items: center;
+  justify-content: center;
+   align-self: center;
+   text-align: center;
+}
+
+
+
+ion-title{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size:x-large;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -16px;
+ 
+}
+
+
+.todoCompleto{
+    z-index: 9999999 !important;
+    width: 95%; //95
+    height: 95%; //80
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.p-botonesFotos{
+  padding: 0 50px 10px;
+}
+
+.todoChiquito
+{
+  border: black 5px dashed;
+    z-index: -100 !important;
+    background-color: white;
+}
+
+
+
+.p-contenedorBotones {
+    padding: 0 10px 10px;
+  }
+
+  
+  input[type=submit] {
+    background: rgb(224, 200, 121);
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: .3em;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), inset 0 10px 10px rgba(255,255,255,0.1);
+    color:black;
+    cursor: pointer;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    padding: 5px 20px;
+    width: 100%;
+  }
+
+  .p-autor{
+    font-size:medium;
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: -20px;
+  }
+  .p-votos{
+    font-size:medium;
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: -10px;
+  }

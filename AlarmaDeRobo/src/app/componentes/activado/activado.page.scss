@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap);
+
+ion-content{
+
+    --background:url("../../../assets/bg-oN.jpg") 0 0/100% 100% no-repeat;
+  
+   }
+ 
+
+   h5{
+
+      color: white;
+      font-family: 'Exo 2', sans-serif;
+      align-items: center;
+      justify-content: center;
+       align-self: center;
+       font-size: 30px;
+       text-align: center;
+       
+    }
+ 
+ .alinear{
+ 
+   align-items: center;
+   justify-content: center;
+    align-self: center;
+    text-align: center;
+ }
+ 
+ .centrar{
+   align-items: center;
+   justify-content: center;
+    align-self: center;
+    text-align: center;
+    top:70%;
+ }
+ 
+ 
+ ion-input{
+ 
+     background-color: gray;
+     color: rgb(255, 255, 255);
+     align-items: center;
+     justify-content: center;
+      align-self: center;
+      text-align: center;
+      left: 21%;
+     width: 225px;
+    border-radius: 5%;
+ }
+ 
+ .pulse {
+
+    animation: pulse 2s infinite;
+    }
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    } 
+  
+    .round {
+      --width: 100px !important;
+      --height: 100px !important;
+      --border-radius: 5%;
+      --vertical-align: middle;
+      --padding-start: 100px;
+      --padding-end: 100px;
+    }

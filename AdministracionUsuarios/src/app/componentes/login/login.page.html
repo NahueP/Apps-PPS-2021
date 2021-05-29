@@ -1,0 +1,34 @@
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+        <img src="../../../assets/avatar.png" class="avatar">
+      
+
+      
+        <ion-item lines="none" detail="true" detail-icon="mail-sharp"> 
+        <ion-input  [(ngModel)]="email" type = "text" name = "nEmail" placeholder="Correo"> </ion-input>
+        </ion-item>
+      
+      <br>
+
+      <ion-item lines="none" detail="true" detail-icon="lock-closed-sharp"> 
+      <ion-input [(ngModel)]="password" type = "password"  name = "nPassword" placeholder="Contraseña"> </ion-input>
+      </ion-item>
+      <br>
+      
+      <div id="container">
+
+      <ion-button (click)= "onLogin()" type="submit" color= "success" expand="block" fill="outline" style="font-weight: bold; font-size: medium;"><ion-icon name="send-sharp"></ion-icon></ion-button>
+      <ion-button (click)= "Limpiar()" type="submit" color= "medium" expand="block"fill="outline" style="font-weight: bold; font-size: medium;"><ion-icon name="refresh-sharp"></ion-icon></ion-button>
+      <ion-button (click)= "presentActionSheet()" type="submit" color= "secondary" expand="block"fill="outline" style="font-weight: bold; font-size: medium;"><ion-icon name="people-sharp"></ion-icon></ion-button>
+      
+        
+
+      </div>
+    
+      
+    </ion-card-content>
+  </ion-card>
+  
+
+</ion-content>

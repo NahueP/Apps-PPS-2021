@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  
+
+<ion-button shape="round" id="btnScan" color="tertiary" (click)="scannerStarting()" expand="full"> <ion-icon name="qr-code"></ion-icon>  Escanear código QR  <ion-icon name="qr-code"></ion-icon></ion-button>
+
+<ion-card class = "ionCardPequeño">
+
+  <div align="center"> <h3>¡Hola {{nombreDelUsuario}}!</h3></div>
+
+</ion-card>
+
+
+
+<ion-card>
+<br>
+
+<div align="center"> <h1>Correo del usuario: <h2 class = "nombre"> {{correoDelUsuario}} </h2>  </h1></div>
+<!-- <div align="center"> <h1>Perfil del usuario: <h2 class = "nombre"> {{tipoDeUsuario}} </h2></h1></div> -->
+
+<div align="center"> <h1>CRÉDITOS:</h1></div>
+<div align="center"> <h2 class="acumCred"> $ {{acumuladorCreditos}} </h2></div>
+
+</ion-card>
+
+<ion-button shape="round" (click)="ActualizarSaldo()" expand="full" color= "tertiary">Actualizar Saldo <ion-icon name="refresh"></ion-icon></ion-button>
+<ion-button shape="round" (click)="CerrarSesion()" expand="full" color= "dark">Cerrar sesión <ion-icon name="log-in-outline"></ion-icon></ion-button>
+<ion-button shape="round" (click)="limpiarCreditos()" expand="full" color= "medium">Eliminar Saldo <ion-icon name="trash"></ion-icon></ion-button>
+ 
+</ion-content>

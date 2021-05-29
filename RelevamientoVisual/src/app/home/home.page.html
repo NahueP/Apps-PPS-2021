@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="dark">
+      <ion-title align="center">
+       ¿Que tipo de foto desea subir?
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+  <br>
+    <ion-card color="light" (click)="CosasLindas()">
+      <img src="../../assets/lindo.jpg" alt="" height="10%" width="100%">
+      <ion-card-content>
+        <ion-card-title>
+          Cosas lindas
+        </ion-card-title>
+      </ion-card-content>
+    </ion-card>
+  <br>
+    <ion-card color="light" (click)="CosasFeas()">
+      <img src="../../assets/feo.jpg" alt="" height="10%" width="100%">
+      <ion-card-header>
+       
+        <ion-card-title>Cosas feas</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ion-content>
+  

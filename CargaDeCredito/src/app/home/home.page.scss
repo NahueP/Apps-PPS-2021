@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Russo+One&display=swap);
+
+
+ion-content{
+   --background:url("../../assets/fondo.jpg") 0 0/100% 100% no-repeat;
+}
+
+
+ion-card.ionCardPequeño{
+  font-family: 'Russo One', sans-serif;
+  height: 10%;
+  background-color: rgba($color: #252525, $alpha: 1.0);
+
+}
+
+#btnScan{
+ 
+}
+
+ion-card{
+  font-family: 'Russo One', sans-serif;
+  height: 50%;
+  background-color: rgba($color: gold, $alpha: 1.0);
+}
+
+ion-card h1{
+  color:black;
+}
+
+ion-card h2{
+  color: green;
+}
+
+.acumCred{
+  font-size: 70px;
+}
+
+ion-card h2.nombre{
+  color: black;
+}
+
+ion-button{
+ height: 50px;
+ font-weight: bold;
+ 
+
+}
+

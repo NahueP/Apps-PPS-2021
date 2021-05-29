@@ -1,0 +1,56 @@
+<ion-header >
+  <ion-toolbar  color="dark"  >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Cosas Lindas</ion-title>
+     <ion-buttons slot="end"> 
+      <ion-button (click)="onLogout()">
+        <ion-icon class="icon" name="log-out-outline"></ion-icon>
+      </ion-button>  
+     </ion-buttons> 
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content> 
+
+
+      <div class="p-contenedorBotones">
+            <input  (click)="captureAndUploadToFirebaseStorage()" type="submit" value="TOMAR FOTO">
+            <input  (click)="refrescarListado()" type="submit" value="RECARGAR LISTADO">
+      </div>
+
+    <ion-grid >
+      <ion-row>
+        <ion-col size="4" *ngFor="let fotos of listadoImagenes">
+          <div class="todoChiquito">
+            <img src="{{fotos.link}}" alt="" width="150px" height="150px" (click)="mostrarImagen(fotos.link,fotos.usuario)" (click)="cantidadVotos()" class="imagenMuestra">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-card class="todoCompleto" *ngIf="mostrarUnicaFoto == true" >
+
+        <img [src]="linkFoto" alt="" class="pantallaGrande">
+        
+          <div class="p-botonesFotos" style="display: inline-flex;">
+              <input  (click)="esconderFoto()" type="submit" value="Cerrar">
+              <input (click)="evaluarFoto()" type="submit" value="Votar">
+          </div>
+          <p class=p-votos>
+            Votos: {{fotoVotos}}
+          </p>
+          <p class = p-autor>
+           {{usuarioFoto}}
+          </p>
+      
+         
+
+      </ion-card>
+      
+     
+</ion-content>

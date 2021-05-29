@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+     
+      <h1 id="litheader">INGRESAR</h1>
+
+      <ion-input [(ngModel)]="email" type = "text" name = "nEmail" placeholder="Correo"> </ion-input>
+
+      <br>
+
+      <ion-input [(ngModel)]="password" type = "password"  name = "nPassword" placeholder="Contraseña"> </ion-input>
+
+      <br>
+      
+      <div id="container">
+
+      <input  (click)="onLogin()" type="submit" name="Login" id="go" value="➜">
+      <br>
+      <br>
+      <input (click)="Limpiar()" type="submit" class="limpiar" name="Login" id="go" value="X">
+        
+
+      </div>
+    
+      
+    </ion-card-content>
+  </ion-card>
+  
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="person-sharp"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="start">
+      <ion-fab-button color="success" (click)='autocompleta("TS")' >TS</ion-fab-button>
+      <ion-fab-button color="tertiary" (click)='autocompleta("AN")'  >AN</ion-fab-button>
+      <ion-fab-button color="warning" (click)='autocompleta("US")' >US</ion-fab-button>
+      <ion-fab-button color="danger" (click)='autocompleta("IN")' >IN</ion-fab-button>
+      <ion-fab-button color="primary" (click)='autocompleta("AD")' >AD</ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+
+</ion-content>

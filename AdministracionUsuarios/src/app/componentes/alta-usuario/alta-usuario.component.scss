@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap);
+
+ion-content{
+    --background:url("../../../assets/fondo2.jpg") 0 0/100% 100% no-repeat;
+    
+}
+
+ion-card{
+
+    --background: rgb(0, 119, 255);
+}
+
+ion-input{
+    font-family: 'Libre Baskerville', serif;
+}
+
+ion-button{
+    font-family: 'Libre Baskerville', serif;
+}
+
+ion-item{
+    --background: rgb(0, 119, 255);
+    
+}
+
+ion-title{
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 25px;
+}

@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.TablaDidactica",
+  "appName": "Tabla Didactica",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2950
+    }
+  },
+  "cordova": {}
+}

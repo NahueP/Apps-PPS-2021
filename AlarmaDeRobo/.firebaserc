@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "misapps-64829": {
+      "hosting": {
+        "app": [
+          "misapps-64829"
+        ]
+      }
+    }
+  }
+}

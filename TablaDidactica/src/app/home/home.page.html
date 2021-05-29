@@ -1,0 +1,140 @@
+<ion-header>
+    <ion-content>  
+      <ion-fab vertical="top" horizontal="start" slot="fixed">
+        <ion-fab-button color="medium">
+            <img [src]="srcDefaultPaises">
+        </ion-fab-button>
+        
+        <ion-fab-list side="bottom">
+            <ion-fab-button color="dark" (click)="cambiarIdioma('español')">
+              <img src="../../assets/paises/esp.png">
+            </ion-fab-button>
+            <ion-fab-button color="dark" (click)="cambiarIdioma('ingles')">
+              <img src="../../assets/paises/uk.png">
+            </ion-fab-button>
+            <ion-fab-button color="dark" (click)="cambiarIdioma('portugues')">
+              <img src="../../assets/paises/br.png">
+            </ion-fab-button>
+            <ion-fab-button color="dark" (click)="onLogout()">
+              <ion-icon name="log-out-outline" style="font-size: x-large;" color="light"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+    
+  </ion-content>
+
+  <ion-content>
+
+
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button color="medium">
+        <img [src]="srcDefaultTemas">
+    </ion-fab-button>
+  
+  
+      <ion-fab-list side="bottom">
+          <ion-fab-button color="light" (click)="cambiarTema('colores')">
+            <img src="../../assets/temas/colores.png">
+          </ion-fab-button>
+          <ion-fab-button color="light" (click)="cambiarTema('numeros')">
+            <img src="../../assets/temas/numeros.png">
+          </ion-fab-button>
+          <ion-fab-button color="light" (click)="cambiarTema('animales')">
+            <img src="../../assets/temas/animales.png">
+          </ion-fab-button>
+      </ion-fab-list>
+  </ion-fab>
+    
+  </ion-content>
+  
+  </ion-header>
+
+  <br><br><br><br> 
+
+  
+
+<ion-content padding class="background"> 
+
+
+<div class="divBotones" *ngIf="mostrar=='colores'">
+
+      <ion-button (click)="reproducir('colores','rojo')" class = "botonesExpandidos" expand = "full" color="transparent" size="large">
+          <img src="../../assets/colores/rojo.jpg"  > 
+      </ion-button>
+
+      <ion-button (click)="reproducir('colores','azul')" class = "botonesExpandidos" expand = "full" color="transparent" size="large">
+        <img src="../../assets/colores/azul.png" >
+      </ion-button>
+
+      <ion-button (click)="reproducir('colores','amarillo')" class = "botonesExpandidos" expand = "full" color="transparent" size="large">
+        <img src="../../assets/colores/amarillo.png" >
+      </ion-button>
+
+      <ion-button (click)="reproducir('colores','verde')" class = "botonesExpandidos" expand = "full" color="transparent" size="large">
+        <img src="../../assets/colores/verde.png" >
+      </ion-button>
+
+      <ion-button (click)="reproducir('colores','rosa')" class = "botonesExpandidos" expand = "full" color="transparent" size="large">
+        <img src="../../assets/colores/rosa.jpg" >
+      </ion-button>
+
+</div>
+
+
+
+
+<div class="divBotones" *ngIf="mostrar=='numeros'">
+
+        <ion-button (click)="reproducir('numeros','1')" class = "botonesExpandidos" expand="full" color="danger" size="large">
+            <img src="../../assets/numeros/uno.png" id="imgNum">
+        </ion-button>
+
+        <ion-button (click)="reproducir('numeros','2')" class = "botonesExpandidos" expand="full" color="success" size="large" >
+            <img src="../../assets/numeros/dos.png" id="imgNum">
+        </ion-button>
+
+        <ion-button (click)="reproducir('numeros','3')" class = "botonesExpandidos" expand="full" color="secondary" size="large" >
+            <img src="../../assets/numeros/tres.png" id="imgNum">
+        </ion-button>
+
+        <ion-button (click)="reproducir('numeros','4')" class = "botonesExpandidos" expand="full" color="primary" size="large" >
+            <img src="../../assets/numeros/cuatro.png"id="imgNum" >
+        </ion-button>
+
+        <ion-button (click)="reproducir('numeros','5')" class = "botonesExpandidos" expand="full" color="warning" size="large" >
+            <img src="../../assets/numeros/cinco.png" id="imgNum">
+        </ion-button>
+
+</div>
+
+
+
+
+<div class="divBotones" *ngIf="mostrar=='animales'">
+
+        <ion-button (click)="reproducir('animales','perro')" class = "botonesExpandidos" expand="full" color="danger" size="large" padding>
+            <img src="../../assets/animales/perro.png" id="imgAnim" >
+        </ion-button>
+        <ion-button (click)="reproducir('animales','gato')" class = "botonesExpandidos" expand="full" color="warning" size="large" padding>
+            <img src="../../assets/animales/gato.png" id="imgAnim">
+        </ion-button>
+        <ion-button (click)="reproducir('animales','pez')" class = "botonesExpandidos" expand="full" color="secondary" size="large" padding>
+            <img src="../../assets/animales/pez.png" id="imgAnim">
+        </ion-button>
+        <ion-button (click)="reproducir('animales','vaca')" class = "botonesExpandidos" expand="full" color="success" size="large" padding>
+            <img src="../../assets/animales/vaca.png" id="imgAnim">
+        </ion-button>
+        <ion-button (click)="reproducir('animales','pajaro')" class = "botonesExpandidos" expand="full" color="primary" size="large" padding>
+            <img src="../../assets/animales/pajaro.png" id="imgAnim">
+        </ion-button>
+
+</div>
+
+
+
+
+
+
+
+
+</ion-content>

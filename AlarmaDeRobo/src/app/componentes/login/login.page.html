@@ -1,0 +1,65 @@
+<ion-content>
+  <ion-card>
+    <ion-card-content >
+     
+    <div class = "datos">
+      
+     <ion-item>
+     <ion-label position="fixed" >Correo:</ion-label>
+     <ion-input [(ngModel)]="email" type = "text" name = "nEmail" > </ion-input> 
+     </ion-item>
+     
+     <ion-item>
+     <ion-label position="fixed">Contraseña:</ion-label>
+      <ion-input [(ngModel)]="password" type = "password"  name = "nPassword"> </ion-input>
+    </ion-item>
+
+    </div>
+
+     <div class="container" style="display: inline-flex;"> 
+      <img src="../../../assets/candado.png" height="60px" width="60px" >
+      <ion-grid style="width: 320px;">
+      <ion-row > 
+        <ion-col>
+          <ion-button  type="submit" color="danger" expand="block" (click)="onLogin()">Entrar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button  type="submit" color="medium" expand="block" (click)="Limpiar()">Limpiar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </div> 
+
+    <ion-list>
+      <ion-radio-group value="usuarios">
+        <ion-item style="height: 35px;">
+          <ion-label>Admin</ion-label>
+          <ion-radio slot="end" value="admin" color="success" mode="md" (click)='autocompleta("AD")'></ion-radio>
+        </ion-item>
+        <ion-item style="height: 35px;">
+          <ion-label>Invitado</ion-label>
+          <ion-radio slot="end" value="invitado" color="success" mode="md" (click)='autocompleta("IN")'></ion-radio>
+        </ion-item>
+        <ion-item style="height: 35px;">
+          <ion-label>Usuario</ion-label>
+          <ion-radio slot="end" value="usuario" color="success" mode="md" (click)='autocompleta("US")'></ion-radio>
+        </ion-item>
+        <ion-item style="height: 35px;">
+          <ion-label>Anonimo</ion-label>
+          <ion-radio slot="end" value="anonimo" color="success" mode="md" (click)='autocompleta("AN")' ></ion-radio>
+        </ion-item>
+        <ion-item style="height: 35px;">
+          <ion-label>Tester</ion-label>
+          <ion-radio slot="end" value="tester" color="success" mode="md" (click)='autocompleta("TS")'></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+      
+    </ion-card-content>
+    
+  </ion-card>
+
+
+
+</ion-content>

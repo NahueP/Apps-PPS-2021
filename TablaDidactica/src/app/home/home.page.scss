@@ -1,0 +1,74 @@
+
+
+ion-content.background{
+  --background:url("./../../assets/fondo-home.png") 0 0/100% 100% no-repeat;
+  
+}
+
+:host{
+  background-color: black;
+}
+
+.divBotones{
+   height: 47%;
+   width: 100%;
+  
+   
+}
+
+.botonesExpandidos {
+
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height: 40%;
+}
+
+#imgNum{
+  max-height: 100px;
+  max-width: 100px;
+  
+}
+
+#imgAnim{
+  max-height: 100px;
+  max-width: 100px;
+  
+}
+
+
+ion-content.img
+{
+position: absolute;
+height: 100%;
+width: 100%;
+
+}
+
+
+
+@media screen and (orientation:landscape) 
+{
+  .divBotones{
+    height: 95%;
+    width: 100%;
+    display: inline-flex;
+  
+ }
+
+ .botonesExpandidos {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  }
+
+  img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  }
+ 
+}

@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap);
+
+.ion-page{
+	background-color: black;
+}
+
+ion-content{
+     --background:url("../../assets/fondo-home.jpg") 0 0/100% 100% no-repeat;
+    
+}
+
+ion-avatar{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+p{
+	font-family: 'Libre Baskerville', serif;
+	font-size: xx-small;
+	
+}
+
+ion-button{
+	font-family: 'Libre Baskerville', serif;
+}
+
+ion-title{
+	font-family: 'Libre Baskerville', serif;
+	font-size: smaller;
+}
+
+.boton{
+	border-radius: 15px;
+}
+
+.azul{
+	background-color:#000099;
+}
+
+.rojo{
+	background-color: #CC0000;
+}
+
+.menu-items{
+	--ion-background-color: transparent !important;
+}
+
+.contenido{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "controldegastos-817d9": {
+      "hosting": {
+        "app": [
+          "controldegastos-817d9"
+        ]
+      }
+    }
+  }
+}
